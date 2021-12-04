@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  left: 20%;
+  right: 20%;
+  top: 0;
+  color: #000;
+  margin: auto;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<video autoplay muted loop id="video">
+  <source src="https://github.com/turbster/turbster.app/blob/main/TurbsterOpening.mp4?raw=true" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+  <h1>Turbster</h1>
+  <p>Turbster is your app for car content. Download the app for your platform using the buttons below!</p>
+   <div
+  class="store-badge"
+  data-name="Turbster Mobile App"
+  data-google-play-url="https://play.google.com/store/apps/details?id=fr.puyou.cheerswipe"
+  data-app-store-url="https://apps.apple.com/us/app/cheerswipe/id1468158095?ls=1"
+></div>
+</div>
+
+<script>
+	var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    if (userAgent.includes("HUAWEI")) {
+       	alert('HUAWEI Android')
+    } else if (userAgent.includes("Android")) {
+       	alert('Android')
+    } else if (userAgent.includes("iPhone")) {
+       	alert('iOS')
+    } else {
+    	// alert('hi')
+    }
+    
+ 
+</script>
+
+<script
+  async
+  src="https://cdn.jsdelivr.net/npm/store-badge@1/build/bundle.js"
+></script>
+
+</body>
+</html>
+
